@@ -1,0 +1,24 @@
+{
+  "name": "apiframework",
+  "version": "0.1.0",
+  "author": "Jeffrey Sun",
+  "description": "API framework",
+  "main": "server.js",
+  "engines": {
+    "node": "0.8.x"
+  },
+   "dependencies": {
+    "nconf":"0.6.x",
+	"log4js":"0.5.x",
+	"express": "3.0.x"	
+  },
+   "devDependencies": {
+    },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "keywords": [
+    "api"
+  ]
+}
