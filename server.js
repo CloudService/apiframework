@@ -37,6 +37,15 @@ require("./lib/apiLoader.js")({'expressApp': expressApp, 'serverApp': serverApp}
 /**********************************************************************/
 var listeningPort = config.get('port');
 var secure = config.get("secure");
+
+// When use the command line parameter --secure=false, the type of secure is string. 
+// And the string 'false' is converted to be boolean value true.
+// To make it intuitionistic, we convert the 'false' to false. 
+if(typeof secure === 'string'){
+	if(secure === 'false')
+		secure = false;
+}
+
 if(secure){
 	var keyPath = path.join(__dirname, config.get('key'));
 	var certPath = path.join(__dirname, config.get('cert'));
