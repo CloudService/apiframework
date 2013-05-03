@@ -1,7 +1,23 @@
 {
-    "build": "development",
+    "build": "devlopment",
     "port": "3000",
-    "secure": false,
-    "key": "./lib/certificate/key.pem",
-    "cert": "./lib/certificate/cert.pem"    
+    "secure": true,
+    "devlopment": {
+        "key": "./lib/certificate/key.pem",
+        "cert": "./lib/certificate/cert.pem",
+        "mongodb": {
+            "host": "127.0.0.1",
+            "port": 27017,
+            "name": "coolviewer"
+        }
+    },
+    "production": {
+        "key": "./lib/certificate/key.pem",
+        "cert": "./lib/certificate/cert.pem",
+        "mongodb": {
+            "host": "127.0.0.1",
+            "port": 27017,
+            "name": "coolviewer"
+        }
+    }
 }

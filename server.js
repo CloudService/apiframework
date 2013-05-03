@@ -18,6 +18,9 @@ var serverApp =  require('./lib/serverApplication.js');
 /**********************************************************************/
 var config = serverApp.config;
 
+var build = config.get('build');
+var buildConfigure = config.get(build);
+
 /**********************************************************************/
 // Configure express
 /**********************************************************************/
@@ -47,8 +50,9 @@ if(typeof secure === 'string'){
 }
 
 if(secure){
-	var keyPath = path.join(__dirname, config.get('key'));
-	var certPath = path.join(__dirname, config.get('cert'));
+
+	var keyPath = path.join(__dirname, buildConfigure.key);
+	var certPath = path.join(__dirname, buildConfigure.cert);
 	var sslkey = fs.readFileSync(keyPath).toString();
 	var sslcert = fs.readFileSync(certPath).toString();
 
