@@ -1,7 +1,7 @@
 {
     "build": "devlopment",
     "port": "3000",
-    "secure": true,
+    "secure": false,
     "devlopment": {
         "key": "./lib/certificate/key.pem",
         "cert": "./lib/certificate/cert.pem",
