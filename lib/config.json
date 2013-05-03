@@ -11,6 +11,17 @@
             "name": "coolviewer"
         }
     },
+	"staging": {
+        "key": "./lib/certificate/key.pem",
+        "cert": "./lib/certificate/cert.pem",
+        "mongodb": {
+            "host": "127.0.0.1",
+            "port": 27017,
+            "name": "coolviewer",
+			"username":"user123",
+			"password":"secret"
+        }
+    },
     "production": {
         "key": "./lib/certificate/key.pem",
         "cert": "./lib/certificate/cert.pem",
