@@ -9,9 +9,10 @@
   },
    "dependencies": {
     "nconf":"0.6.x",
-	"log4js":"0.5.x",
 	"express": "3.0.x",
-	"mongodb": "1.1.x"
+	"mongodb": "1.1.x",
+	"winston": "0.7.x",
+	"winston-mongodb": "0.4.x"
   },
    "devDependencies": {
     },

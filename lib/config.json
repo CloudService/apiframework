@@ -6,20 +6,32 @@
         "key": "./lib/certificate/key.pem",
         "cert": "./lib/certificate/cert.pem",
         "mongodb": {
-            "host": "127.0.0.1",
+            "host": "10.31.149.122",
             "port": 27017,
             "name": "coolviewer"
+        },
+        "logger_mongodb": {
+            "host": "10.31.149.122",
+            "port": 27017,
+            "name": "logger"
         }
     },
-	"staging": {
+    "staging": {
         "key": "./lib/certificate/key.pem",
         "cert": "./lib/certificate/cert.pem",
         "mongodb": {
             "host": "127.0.0.1",
             "port": 27017,
             "name": "coolviewer",
-			"username":"user123",
-			"password":"secret"
+            "username": "user123",
+            "password": "secret"
+        },
+        "logger_mongodb": {
+            "host": "127.0.0.1",
+            "port": 27017,
+            "name": "logger",
+            "username": "user123",
+            "password": "secret"
         }
     },
     "production": {
@@ -29,6 +41,13 @@
             "host": "127.0.0.1",
             "port": 27017,
             "name": "coolviewer"
+        },
+        "logger_mongodb": {
+            "host": "127.0.0.1",
+            "port": 27017,
+            "name": "logger",
+            "username": "user123",
+            "password": "secret"
         }
     }
 }

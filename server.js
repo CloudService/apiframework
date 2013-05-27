@@ -12,6 +12,7 @@ var fs = require('fs');
 // Initialize the server appliation
 /**********************************************************************/
 var serverApp =  require('./lib/serverApplication.js');
+serverApp.initialize();
 
 /**********************************************************************/
 // Configuration
