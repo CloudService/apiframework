@@ -35,7 +35,9 @@ expressApp.use(express.static(__dirname + '/public'))
 /**********************************************************************/
 // Load the REST APIs
 /**********************************************************************/
-require("./lib/apiLoader.js")({'expressApp': expressApp, 'serverApp': serverApp});
+
+var restAPIManager = require('./lib/restAPIManager.js');
+restAPIManager.initialize({'expressApp': expressApp, 'serverApp': serverApp});
 
 /**********************************************************************/
 // Start the web server
