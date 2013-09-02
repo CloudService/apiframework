@@ -5,6 +5,7 @@
     "devlopment": {
         "key": "./lib/certificate/key.pem",
         "cert": "./lib/certificate/cert.pem",
+        "enablecros": true,
         "mongodb": {
             "host": "10.31.149.122",
             "port": 27017,
@@ -19,6 +20,7 @@
     "staging": {
         "key": "./lib/certificate/key.pem",
         "cert": "./lib/certificate/cert.pem",
+        "enablecros": true,
         "mongodb": {
             "host": "127.0.0.1",
             "port": 27017,
@@ -41,6 +43,7 @@
     "production": {
         "key": "./lib/certificate/key.pem",
         "cert": "./lib/certificate/cert.pem",
+        "enablecros": true,
         "mongodb": {
             "host": "127.0.0.1",
             "port": 27017,

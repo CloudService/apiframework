@@ -28,7 +28,7 @@ var buildConfigure = config.get(build);
 /**********************************************************************/
 //The middlewares are invokded in order.
 var expressApp = express();
-expressApp.use(express.static(__dirname + '/static'))
+expressApp.use(express.static(__dirname + '/public'))
 	.use(express.bodyParser()) // The body parser middleware parses the http body into JSON object. 	
 	.use(expressApp.router);
 	
