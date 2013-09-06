@@ -5,7 +5,7 @@
     "url":"https://github.com/CloudService/cadviewer",
     "options":{
 		"paths":[
-		  "../lib/apiPlugins"
+		  "../lib/api/apiPlugins"
 		],
 		"exclude":"template.js",
         "outdir":"../public/dev/docs"
