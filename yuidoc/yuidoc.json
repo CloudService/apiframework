@@ -10,5 +10,5 @@
 		"exclude":"template.js",
         "outdir":"../public/dev/docs"
     },
-    "comments":"Change to the directory of the json file and run 'yuidoc -c yuidoc.json'"
+    "comments":"Change to the directory of the json file and run 'npm install -g yuidocjs; yuidoc -c yuidoc.json'. See http://yui.github.io/yuidoc/ for help."
 }
